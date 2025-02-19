@@ -7,21 +7,15 @@
     <style>
         body { text-align: center; font-family: Arial, sans-serif; }
         img { width: 80%; max-width: 1000px; cursor: crosshair; }
+        #status { font-size: 20px; margin-top: 20px; }
     </style>
 </head>
 <body>
     <h1>Finde den Landkreis!</h1>
     <p id="frage"></p>
     <img id="karte" src="1_sehr_hoch.png" alt="Deutschland Karte">
-    <script>
-        const kreise = ["Alb-Donau-Kreis", "Biberach", "Bodenseekreis"]; // Beispiel-Landkreise
-        let aktuellerKreis = kreise[Math.floor(Math.random() * kreise.length)];
-        document.getElementById("frage").innerText = `Klicke auf: ${aktuellerKreis}`;
-        
-        document.getElementById("karte").addEventListener("click", function(event) {
-            alert("Hier kommt später die Überprüfung! 😉");
-        });
-    </script>
+    <p id="status"></p>
+    
+    <script src="script.js"></script>
 </body>
 </html>
- 
